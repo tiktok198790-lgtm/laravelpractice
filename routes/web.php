@@ -1,10 +1,16 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+//  use App\Http\Controllers##??\UserController##??;
+use App\Http\Controllers\UserController;
 
 Route::get('/', function () {
     return view('welcome');
 });
+
+// Route::get('/users', [UserController::class, 'index']);
+
+
 
 // home page = / 
 
@@ -14,10 +20,9 @@ Route::get('/', function () {
 // delete  delete
 
 
-Route :: get("/about" , function (){
-//    return view("main");
-   return "i am about";
-});
+Route :: get("/about" , function (){} );
+
+Route :: get("/users" ,  [UserController::class , "index"] );
 
 
 
