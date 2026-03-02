@@ -16,4 +16,17 @@ class UserController extends Controller
     return "hello";
   }
 
+     public function Home(){
+    return view('Home');
+    // return "home";
+  }
+
+    public function ageVerfication(){
+      
+    return view('Home' ,[ "age" => 10] );
+    // return "hello";
+  }
+
+    
+
 }

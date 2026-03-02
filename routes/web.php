@@ -23,6 +23,12 @@ Route::get('/', function () {
 Route :: get("/about" , function (){} );
 
 Route :: get("/users" ,  [UserController::class , "index"] );
+Route :: get("/hello" ,  [UserController::class , "Hello"] );
+
+// Route :: get("/home" ,  [UserController::class , "Home"] );
+Route :: get("/home" ,  [UserController::class , "ageVerfication"] );
+
+
 
 
 
