@@ -17,13 +17,16 @@ class UserController extends Controller
   }
 
      public function Home(){
-    return view('Home');
+    return view('student');
     // return "home";
   }
 
     public function ageVerfication(){
-      
-    return view('Home' ,[ "age" => 10] );
+      for($i = 0 ; $i < 10 ; $i++){
+        
+      }
+     $arr = ["ahmed" , "bilawal" , "ayan"]; 
+    return view('Home' , compact("arr"));
     // return "hello";
   }
 

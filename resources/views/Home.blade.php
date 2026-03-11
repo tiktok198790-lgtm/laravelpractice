@@ -6,11 +6,15 @@
     <title>Document</title>
 </head>
 <body>
-    <h1> hello i am home  </h1>
-  @if($age >= 18)
-     <p> you are an adult </p>
-  @else
-     <p> you are minor </p>
-  @endif 
+
+  
+    @foreach ($arr as $user)
+        <li>Hello, {{$user}}</li>
+    @endforeach
+ 
+    
+ 
+
+
 </body>
 </html>
